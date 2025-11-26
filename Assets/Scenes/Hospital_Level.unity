@@ -8869,7 +8869,7 @@ Transform:
   m_GameObject: {fileID: 117480235}
   serializedVersion: 2
   m_LocalRotation: {x: 0.50018173, y: -0.029886812, z: -0.05161776, w: 0.8638638}
-  m_LocalPosition: {x: -40.66, y: 3.011, z: 4.572}
+  m_LocalPosition: {x: -40.600002, y: 3.011, z: 4.4999995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25687,6 +25687,8 @@ PlayableDirector:
     value: {fileID: 1732306671}
   - key: {fileID: 4160525727115702946, guid: 175b4ed3d8dec2d4cbb8003b26db86fa, type: 2}
     value: {fileID: 1274814566}
+  - key: {fileID: 7934376627434209374, guid: 175b4ed3d8dec2d4cbb8003b26db86fa, type: 2}
+    value: {fileID: 1650917042}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &649457407
@@ -44456,7 +44458,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -57978,13 +57980,14 @@ GameObject:
   - component: {fileID: 1650917046}
   - component: {fileID: 1650917045}
   - component: {fileID: 1650917044}
+  - component: {fileID: 1650917047}
   m_Layer: 0
   m_Name: EndingTrigger2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1650917043
 Transform:
   m_ObjectHideFlags: 0
@@ -57994,7 +57997,7 @@ Transform:
   m_GameObject: {fileID: 1650917042}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.563114, y: 20.086617, z: -18.482468}
+  m_LocalPosition: {x: 8.863113, y: 20.086617, z: -18.482468}
   m_LocalScale: {x: 4, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58015,7 +58018,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -58074,6 +58077,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650917042}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1650917047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650917042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aeebf7eccbe11da4882bc59268d797c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeline: {fileID: 657594575}
 --- !u!1001 &1657358229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71379,7 +71395,7 @@ PrefabInstance:
     - target: {fileID: 4526845779383028992, guid: 8b1b264944235ad4e9fbf6de90402f82,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35.923
+      value: -36.54091
       objectReference: {fileID: 0}
     - target: {fileID: 4526845779383028992, guid: 8b1b264944235ad4e9fbf6de90402f82,
         type: 3}
@@ -71420,6 +71436,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JunkPile
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798134502693510717, guid: 8b1b264944235ad4e9fbf6de90402f82,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
